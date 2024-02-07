@@ -1,1 +1,19 @@
 /* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 1052px;
+  height: 105px;
+}
+
+.logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
