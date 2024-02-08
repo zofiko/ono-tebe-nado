@@ -11,28 +11,48 @@
   </head>
   <body>
     <header class="header">
-      <nav  class="header__menu">
+      <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item_no-bullit">главная</li>
-          <li class="header__links-list-item"> <a href="#0">посмотреть лоты</a> </li>
-          <li class="header__links-list-item"> <a href="#0">об аукционе</a> </li>
+          <li class="header__links-list-item_no-bullit header__link_active">
+            <a class="header__link">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0">об аукционе</a>
+          </li>
         </ul>
       </nav>
-      <a class="header__logo" href="#0"
-        ><img class="header__logo-image" src="/images/logo-black.svg" alt="Логотип"
+      <a class="header__logo"
+        ><img
+          class="header__logo-image"
+          src="./images/logo-black.svg"
+          alt="Логотип"
       /></a>
       <address class="address">
-        <a class="header__address" href="tel:+9 999 555 5555">+9 999 555 5555</a>
-        
-        <br/>
+        <a class="header__address" href="tel:+9 999 555 5555"
+          >+9 999 555 5555</a
+        >
+
+        <br />
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        
-<br />
-       наб. Принсенграхт 263-<br> 265, Амстердам
+
+        <br />
+        наб. Принсенграхт 263-<br />
+        265, Амстердам
       </address>
     </header>
     <main>
-      <section class="cover"></section>
+      <section class="cover">
+        <div class="overlay">
+          <h1 class="cover__title">
+            <span class="aligned-text">оно</span
+            ><span class="aligned-text_center">тебе</span
+            ><span class="aligned-text_right">надо</span>
+          </h1>
+        </div>
+      </section>
       <section class="lots"></section>
       <section class="about"></section>
     </main>

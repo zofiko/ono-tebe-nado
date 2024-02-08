@@ -1,19 +1,101 @@
 /* место для вашего кода */
-.header {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  width: 1052px;
-  height: 105px;
+body {
+  margin: auto;
+  font-family: Raleway, sans-serif;
+  width: 1100px;
+  height: 3028px;
 }
 
-.logo {
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 105px;
+  width: 1052px;
+  margin: 92px 24px 96px;
+}
+
+.header__menu {
+  box-sizing: border-box;
+  width: 391.48px;
+  height: 22px;
+}
+
+.header__links-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__links-list {
+  list-style: circle;
+}
+
+.header__link {
+  color: #000000;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_active .header__link {
+  text-decoration: none;
+}
+
+.header__logo {
   display: block;
   width: 148px;
   height: 105px;
 }
 
+.header__logo-image {
+  width: 100%;
+  height: 100%;
+}
+
 .address {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  color: #000000;
+  line-height: 24.3px;
+  font-size: 18px;
+  font-weight: normal;
   font-style: normal;
+  width: 240.52px;
+  height: 98px;
+}
+
+.cover {
+  position: relative;
+  box-sizing: border-box;
+  width: 1110px;
+  height: 757px;
+  background-image: url(/images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  width: 1110px;
+  height: 757px;
+  background-color: rgb(0 0 0/ 0.6);
+}
+
+.cover__title {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 165px;
+  bottom: 237px;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 355px;
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
 }
