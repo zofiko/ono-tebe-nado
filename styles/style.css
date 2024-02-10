@@ -79,20 +79,25 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 0;
 }
 
-.overlay {
-  width: 1100px;
-  height: 757px;
-  background-color: rgb(0 0 0/ 0.6);
+.cover .overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
 }
 
 .cover__title {
   position: absolute;
-  left: 50px;
-  right: 50px;
   top: 165px;
+  right: 50px;
   bottom: 237px;
+  left: 50px;
   box-sizing: border-box;
   width: 1000px;
   height: 355px;
@@ -102,6 +107,7 @@ body {
   text-transform: uppercase;
   font-family: Raleway, sans-serif;
   line-height: 100%;
+  z-index: 2;
 }
 
 .aligned-text {
@@ -166,18 +172,187 @@ body {
 }
 
 .cover__description {
-  border: #ffffff 1px solid;
+  text-transform: uppercase;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 637px;
-  height: 28px;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  top: 502px;
+  left: 28px;
 }
+
 .cover__description-text {
   font-size: 22px;
   font-weight: normal;
   font-style: normal;
-  display: inline;
   line-height: 28px;
-  word-spacing: 20px;
+  letter-spacing: 0px;
+}
+
+/* converted letter-spacing from Figma to px */
+.word_spacing_90 {
+  word-spacing: 19.8px;
+}
+
+.word_spacing_80 {
+  word-spacing: 17.6px;
+}
+
+.word_spacing_110 {
+  word-spacing: 24.2px;
+}
+
+.bet-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+  height: 51px;
+  border: #ffffff solid 1px;
+  position: absolute;
+  top: 490px;
+  right: 0px;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: auto;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+.lots {
+  display: flex;
+  position: relative;
+  margin: 179px 24px 146px;
+  width: 1052px;
+  height: 692px;
+}
+
+.lots__heading {
+  position: absolute;
+  top: 0px;
+  right: 891px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: auto;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  position: absolute;
+  top: 74px;
+  bottom: 55px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+  list-style: none;
+  color: #ffffff;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  height: 100%;
+}
+
+.card_type_film {
+  position: relative;
+  background-image: url(/images/card-lot-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_type_film .overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+article {
+  position: relative;
+  height: 100%;
+}
+
+.card__title {
+  position: absolute;
+  top: 51px;
+  left: 40px;
+  right: 40px;
+  font-size: 22px;
+  line-height: 26.4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  z-index: 2;
+}
+
+.card__text {
+  position: absolute;
+  right: 40px;
+  bottom: 48px;
+  left: 40px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: normal;
+  z-index: 2;
+  text-align: left;
+}
+
+.card_type_book {
+  position: relative;
+  background-image: url(/images/card-lot-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_type_book .overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+.card_type_picture {
+  position: relative;
+  background-image: url(/images/card-lot-03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_type_picture .overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+.lots__look-more-link {
+  white-space: nowrap;
+  position: absolute;
+  top: 667px;
+  right: 820px;
+  bottom: 2px;
+  left: 40px;
+  font-size: 20px;
+  line-height: 23x;
+  font-weight: normal;
 }
