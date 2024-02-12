@@ -1,9 +1,22 @@
-/* место для вашего кода */
 body {
   margin: auto;
   font-family: Raleway, sans-serif;
   width: 1100px;
   height: 3028px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -34,6 +47,10 @@ body {
   list-style: circle;
 }
 
+.header__links-list-item .dls1 {
+  letter-spacing: 0.01em;
+}
+
 .header__links-list-item_no-bullit {
   list-style: none;
 }
@@ -44,6 +61,7 @@ body {
 
 .header__logo {
   position: absolute;
+  display: block;
   right: 450px;
   left: 454px;
   width: 148px;
@@ -65,6 +83,11 @@ body {
   left: 786px;
   line-height: 1.35em;
   font-style: normal;
+}
+
+/* Была большая разница по pixel perfect, поэтому далее я применяла letter spacing как в Figma. Не знаю, считается ли это за излишнюю стилизацию. dls означает different_letter_spacing */
+.address .dls1 {
+  letter-spacing: 0.01em;
 }
 
 .cover {
@@ -112,7 +135,7 @@ body {
   height: 115px;
   position: absolute;
   left: 0px;
-  top: 0x;
+  top: 0px;
   display: flex;
   align-items: center;
 }
@@ -197,24 +220,21 @@ body {
   position: absolute;
   top: 490px;
   right: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   border: #ffffff solid 1px;
   font-size: 22px;
-  font-weight: normal;
+  text-transform: uppercase;
   font-style: normal;
+  color: #ffffff;
+  background-color: transparent;
+  line-height: 1.1818em;
 }
 
-/* kinda checked till this part */
-
 .lots {
-  display: flex;
-  position: relative;
-  margin: 179px 24px 146px;
+  box-sizing: border-box;
   width: 1052px;
   height: 692px;
+  position: relative;
+  margin: 179px 24px 146px;
 }
 
 .lots__heading {
@@ -223,7 +243,7 @@ body {
   right: 891px;
   font-size: 40px;
   font-weight: bold;
-  line-height: 47px;
+  line-height: 1.175em;
   text-transform: uppercase;
 }
 
@@ -240,12 +260,38 @@ body {
 
 .card-link {
   display: block;
+  text-decoration: none;
   height: 100%;
 }
 
 .lots__card-list-item {
+  height: 100%;
   width: 334px;
   height: 100%;
+}
+
+.card__title {
+  z-index: 2;
+  position: absolute;
+  top: 51px;
+  left: 40px;
+  right: 40px;
+  font-size: 22px;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.card__text {
+  z-index: 2;
+  position: absolute;
+  right: 40px;
+  bottom: 48px;
+  left: 40px;
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: normal;
 }
 
 .card_type_film {
@@ -269,31 +315,6 @@ body {
 article {
   position: relative;
   height: 100%;
-}
-
-.card__title {
-  position: absolute;
-  top: 51px;
-  left: 40px;
-  right: 40px;
-  font-size: 22px;
-  line-height: 26.4px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: underline;
-  z-index: 2;
-}
-
-.card__text {
-  position: absolute;
-  right: 40px;
-  bottom: 48px;
-  left: 40px;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: normal;
-  z-index: 2;
-  text-align: left;
 }
 
 .card_type_book {
@@ -322,6 +343,10 @@ article {
   background-position: center;
 }
 
+.letter_spacing_dots {
+  letter-spacing: 0.13em;
+}
+
 .card_type_picture .overlay {
   z-index: 1;
   position: absolute;
@@ -333,18 +358,18 @@ article {
 }
 
 .lots__look-more-link {
-  white-space: nowrap;
   position: absolute;
   top: 667px;
   right: 820px;
   bottom: 2px;
   left: 40px;
   font-size: 20px;
-  line-height: 23x;
+  line-height: 1.15em;
   font-weight: normal;
 }
 
 .about {
+  box-sizing: border-box;
   width: 1052px;
   height: 595px;
   margin: 146px 26px 180px;
@@ -353,6 +378,7 @@ article {
 }
 
 .about__logo {
+  box-sizing: border-box;
   width: 240px;
   height: 240px;
   margin-top: 35px;
@@ -373,7 +399,7 @@ article {
 .about__title {
   font-size: 40px;
   font-weight: bold;
-  line-height: 47px;
+  line-height: 1.175em;
   text-transform: uppercase;
   margin-top: 136px;
   margin-left: 25px;
@@ -382,7 +408,7 @@ article {
 .about__text {
   font-size: 20px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 1.2em;
 }
 
 .paragraph__one {
@@ -400,7 +426,30 @@ article {
   margin-bottom: 0;
 }
 
+.paragraph__one .dlsm1 {
+  letter-spacing: -0.01em;
+}
+
+.paragraph__one .dls1 {
+  letter-spacing: 0.01em;
+}
+
+.paragraph__one .dls2 {
+  letter-spacing: 0.02em;
+}
+
+.paragraph__one .dls3 {
+  letter-spacing: 0.03em;
+}
+.paragraph__two .dls4 {
+  letter-spacing: 0.04em;
+}
+
+.paragraph__two .dls1 {
+  letter-spacing: 0.01em;
+}
 .footer {
+  box-sizing: border-box;
   width: 1000px;
   height: 98px;
   display: flex;
@@ -412,28 +461,36 @@ article {
   margin-left: 50px;
 }
 .footer__address {
+  box-sizing: border-box;
   width: 240.52px;
   height: 98px;
-  line-height: 24.3px;
-  letter-spacing: 0.01em;
+  line-height: 1.35em;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
+}
+
+.footer__address .dls1 {
+  letter-spacing: 0.01em;
 }
 
 .footer__links-list {
   list-style: none;
   text-align: center;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17em;
+}
+
+.footer__links-list-item .dls1 {
+  letter-spacing: 0.01em;
 }
 
 .footer__social-list {
-  display: flex;
   width: 240px;
   height: 48px;
-  list-style: none;
+  display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 
 .footer__social-icon {
