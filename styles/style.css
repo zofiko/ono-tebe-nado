@@ -111,9 +111,9 @@
 .aligned-text {
   box-sizing: border-box;
   width: 316px;
-  height: 115px;
   display: flex;
   align-items: center;
+  line-height: 1.15em;
 }
 
 .aligned-text_center {
@@ -121,8 +121,8 @@
   display: flex;
   align-items: center;
   width: 369px;
-  height: 100px;
   margin-left: 286px;
+  line-height: 1em;
 }
 
 .aligned-text_right {
@@ -175,7 +175,7 @@
 
 .cover__description-text {
   box-sizing: border-box;
-  width: 637px;
+  min-width: 637px;
   line-height: 1.2727em;
   letter-spacing: 0px;
   white-space: nowrap;
@@ -249,6 +249,7 @@
   background-position: center;
   position: relative;
 }
+
 article {
   display: flex;
   height: 100%;
@@ -388,6 +389,7 @@ article {
 .paragraph-two .different-letter-spacing-one {
   letter-spacing: 0.01em;
 }
+
 .footer {
   box-sizing: border-box;
   width: 1000px;
@@ -398,6 +400,7 @@ article {
   text-underline-offset: 0.28em;
   text-decoration-thickness: 0.05em;
 }
+
 .footer__address {
   box-sizing: border-box;
   width: 240.52px;
